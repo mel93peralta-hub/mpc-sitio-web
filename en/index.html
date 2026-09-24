@@ -31,8 +31,8 @@
 <header class="site">
   <div class="wrap hbar">
     <a class="brand" href="../en/" aria-label="MPC · Home">
-      <img class="logo-l" alt="MPC" width="120" height="46" src="../assets/logo-en-light.svg">
-      <img class="logo-d" alt="MPC" width="120" height="46" src="../assets/logo-en-dark.svg">
+      <img class="logo-l" alt="MPC" width="162" height="56" src="../assets/logo-en-header-light.svg">
+      <img class="logo-d" alt="MPC" width="162" height="56" src="../assets/logo-en-header-dark.svg">
     </a>
     <nav class="main" aria-label="Main"><a href="../en/" aria-current="page">Home</a><a href="../en/services/">Services</a><a href="../en/process/">How we work</a><a href="../en/results/">Results</a><a href="../en/about/">About</a></nav>
     <div class="tools">
@@ -55,18 +55,35 @@
   </div>
   <div class="rise" role="img" aria-label="Message → Prospect → Client">
   <svg viewBox="0 0 400 300" aria-hidden="true">
-    <path d="M60 240 L190 165 L330 60" fill="none" stroke="var(--brand)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="60" cy="240" r="20" fill="var(--brand)"/>
-    <circle cx="190" cy="165" r="20" fill="var(--brand)"/>
-    <circle class="n3" cx="330" cy="60" r="32" fill="#A3E635"/>
+    <defs>
+      <pattern id="rg" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M25 0H0V25" fill="none" style="stroke:var(--line)" stroke-width="1"/></pattern>
+      <linearGradient id="ra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--brand);stop-opacity:.28"/><stop offset="1" style="stop-color:var(--brand);stop-opacity:0"/></linearGradient>
+      <linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" style="stop-color:var(--brand);stop-opacity:.16"/><stop offset="1" style="stop-color:var(--brand);stop-opacity:.02"/></linearGradient>
+      <radialGradient id="rl"><stop offset="0" stop-color="#A3E635" stop-opacity=".5"/><stop offset="1" stop-color="#A3E635" stop-opacity="0"/></radialGradient>
+    </defs>
+    <rect class="r-grid" x="0" y="0" width="400" height="300" fill="url(#rg)"/>
+    <circle class="r-glow" cx="330" cy="60" r="100" fill="url(#rl)"/>
+    <g class="r-bars" fill="url(#rb)">
+      <rect class="r-bar b1" x="44" y="240" width="32" height="30" rx="6"/>
+      <rect class="r-bar b2" x="174" y="165" width="32" height="105" rx="6"/>
+      <rect class="r-bar b3" x="314" y="60" width="32" height="210" rx="6"/>
+    </g>
+    <path class="r-area" d="M60 240 L190 165 L330 60 L330 270 L60 270 Z" fill="url(#ra)"/>
+    <path class="r-axis" d="M28 270 H372" style="stroke:var(--line)" stroke-width="2" stroke-linecap="round"/>
+    <path class="r-line" pathLength="1" d="M60 240 L190 165 L330 60" fill="none" stroke="var(--brand)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle class="r-ring k1" cx="330" cy="60" r="32" fill="none" stroke="#A3E635" stroke-width="3"/>
+    <circle class="r-ring k2" cx="330" cy="60" r="32" fill="none" stroke="#A3E635" stroke-width="3"/>
+    <circle class="r-node d1" cx="60" cy="240" r="20" fill="var(--brand)"/>
+    <circle class="r-node d2" cx="190" cy="165" r="20" fill="var(--brand)"/>
+    <circle class="r-node d3 n3" cx="330" cy="60" r="32" fill="#A3E635"/>
     <g font-family="DM Sans,system-ui,sans-serif" font-size="17" font-weight="700" fill="var(--ink)">
-      <text x="60" y="284" text-anchor="middle">Message</text>
-      <text x="190" y="208" text-anchor="middle">Prospect</text>
-      <text x="330" y="112" text-anchor="middle">Client</text>
+      <text class="r-lab d1" x="60" y="224" dy="-28" text-anchor="middle">Message</text>
+      <text class="r-lab d2" x="190" y="208" text-anchor="middle">Prospect</text>
+      <text class="r-lab d3" x="330" y="112" text-anchor="middle">Client</text>
     </g>
   </svg><div class="cap">One system, from the first message to the appointment on your calendar.</div></div>
 </div>
-<div class="strip"><ul class="wrap"><li>10+ years in marketing and sales</li><li>Spanish and English</li><li>Your accounts and data stay yours</li><li>No magic promises: we show you what we measure</li></ul></div>
+<div class="strip"><div class="strip-track"><ul><li>10+ years in marketing and sales</li><li>Spanish and English</li><li>Your accounts and data stay yours</li><li>No magic promises: we show you what we measure</li><li>From first message to new client</li></ul><ul aria-hidden="true"><li>10+ years in marketing and sales</li><li>Spanish and English</li><li>Your accounts and data stay yours</li><li>No magic promises: we show you what we measure</li><li>From first message to new client</li></ul></div></div>
 <section><div class="wrap">
   <p class="eyebrow">The problem</p>
   <h2>You pay for ads and still lose customers.</h2>
