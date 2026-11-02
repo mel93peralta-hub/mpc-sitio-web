@@ -226,3 +226,7 @@ header.site{background:color-mix(in srgb,var(--bg) 75%,transparent)}
 .legal p,.legal li{color:var(--ink2);font-size:16px;max-width:72ch}
 .legal ul{margin:0;padding-left:22px;display:grid;gap:8px}
 .legal b{color:var(--ink);font-weight:600}
+
+/* ---- v8: problema por etapa ---- */
+.card .fix{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line);color:var(--ink)}
+.card .fix b{font-weight:700}
