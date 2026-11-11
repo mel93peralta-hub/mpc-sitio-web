@@ -1,16 +1,18 @@
-@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/dm-sans-latin-400-normal.woff2) format("woff2")}
-@font-face{font-family:"DM Sans";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/dm-sans-latin-500-normal.woff2) format("woff2")}
-@font-face{font-family:"DM Sans";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/dm-sans-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/dm-sans-latin-700-normal.woff2) format("woff2")}
-@font-face{font-family:"DM Serif Display";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/dm-serif-display-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/manrope-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/manrope-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/manrope-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/manrope-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/fraunces-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/fraunces-latin-500-normal.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-style:normal;font-weight:600;font-display:swap;src:url(fonts/fraunces-latin-600-normal.woff2) format("woff2")}
 
 :root{
   --bg:#FAF7F2; --bg2:#F1ECE3; --surface:#FFFFFF; --ink:#111827; --ink2:#4B5563; --line:#E3DDD1;
   --brand:#0F766E; --brand-ink:#FFFFFF; --brand-soft:#DCEFEC; --lime:#A3E635; --lime-ink:#111827;
   --focus:#0F766E; --shadow:0 1px 2px rgba(17,24,39,.06),0 8px 24px rgba(17,24,39,.06);
   --logo-l:block; --logo-d:none;
-  --f-display:"DM Serif Display",Georgia,"Times New Roman",serif;
-  --f-body:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --f-display:"Fraunces",Georgia,"Times New Roman",serif;
+  --f-body:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --bg:#0E1512; --bg2:#141D19; --surface:#18231E; --ink:#F3F1EA; --ink2:#AEB9B3; --line:#263630;
@@ -53,7 +55,7 @@ nav.main a[aria-current="page"]{color:var(--ink);background:var(--brand-soft)}
 main{display:block}
 section{padding-block:clamp(48px,8vw,96px)}
 .alt{background:var(--bg2)}
-h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--f-display);font-weight:600;line-height:1.08;margin:0;text-wrap:balance}
 h1{font-size:clamp(40px,7vw,76px);letter-spacing:-.01em}
 h2{font-size:clamp(30px,4.4vw,46px)}
 h3{font-size:24px;line-height:1.2}
