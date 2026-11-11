@@ -432,3 +432,7 @@ header.site{background:color-mix(in srgb,var(--bg) 75%,transparent)}
   .js .ig-time.in .tl::before{transform:none}
 }
 @keyframes rp-sh{to{background-position:-200% 0}}
+
+/* v11: escalera en Servicios, Motor con más alcance */
+.ld-meta{margin:14px 0 0;font-size:13.5px;font-weight:600;color:var(--brand)}
+.ld-2 .ld-meta{color:var(--ink)}
